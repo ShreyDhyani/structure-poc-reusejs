@@ -10,6 +10,9 @@
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "@shared-test/reusejsv2-sample-button#bundle": {
+      "cache": false
     }
   }
 }

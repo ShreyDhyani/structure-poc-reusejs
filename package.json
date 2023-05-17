@@ -4,7 +4,8 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "button:bundle": "turbo run @shared-test/reusejsv2-sample-button#bundle"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
@@ -16,6 +17,10 @@
   "packageManager": "yarn@1.22.19",
   "workspaces": [
     "apps/*",
-    "packages/*"
-  ]
+    "packages/*",
+    "components/*"
+  ],
+  "dependencies": {
+    "rollup": "^3.22.0"
+  }
 }
